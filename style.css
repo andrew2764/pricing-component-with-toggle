@@ -82,3 +82,25 @@ button.primary {
   background: linear-gradient(#a2a7f0, #696edd);
   color: white;
 }
+
+.card.accent {
+  background: linear-gradient(#a2a7f0, #696edd);
+}
+
+.card.accent .card__title,
+.card.accent h1,
+.card.accent .card__details p {
+  color: white;
+}
+
+.card.accent .card__details p {
+  border-bottom: solid 1px color-mix(in srgb, white 25%, transparent);
+}
+.card.accent .card__details p:first-child {
+  border-top: solid 1px color-mix(in srgb, white 25%, transparent);
+}
+
+button.accent {
+  background-color: white;
+  color: #6d72de;
+}
