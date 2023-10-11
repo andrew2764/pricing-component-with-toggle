@@ -94,6 +94,10 @@ label {
   border-radius: 50px;
 }
 
+label:hover {
+  opacity: 0.5;
+}
+
 label:after {
   content: "";
   position: absolute;
