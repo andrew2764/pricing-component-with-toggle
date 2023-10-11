@@ -17,6 +17,13 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
+  padding: 4em 0;
+}
+
+.bg-top {
+  position: absolute;
+  z-index: -1;
+  transform: translateX(30px) translateY(-25px);
 }
 
 button {
@@ -25,6 +32,7 @@ button {
   padding: 1.125em 0;
   border-radius: 8px;
   margin-top: 2.5em;
+  margin-bottom: 0.5em;
   font-size: 13px;
   letter-spacing: 0.25em;
   cursor: pointer;
@@ -46,12 +54,18 @@ h1 span {
 h2 {
   font-size: 32px;
   color: #6e728e;
+  margin-bottom: 1em;
+}
+
+header {
+  margin-bottom: 5em;
 }
 
 .toggle--container {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.75em;
 }
 
 .toggle--container span {
@@ -62,7 +76,7 @@ h2 {
 #price-toggle {
   height: 0;
   width: 0;
-  visibility: hidden;
+  display: none;
 }
 
 label {
@@ -126,6 +140,13 @@ button.primary {
   background: linear-gradient(#a2a7f0, #696edd);
   color: white;
 }
+button.primary:hover {
+  background: transparent;
+  color: #6d72de;
+  border: inset 1px #6d72de;
+  margin-top: calc(2.5em - 1px);
+  margin-bottom: calc(0.5em - 1px);
+}
 
 .card.accent {
   background: linear-gradient(#a2a7f0, #696edd);
@@ -147,4 +168,11 @@ button.primary {
 button.accent {
   background-color: white;
   color: #6d72de;
+}
+button.accent:hover {
+  background: transparent;
+  color: white;
+  border: solid 1px white;
+  margin-top: calc(2.5em - 1px);
+  margin-bottom: calc(0.5em - 1px);
 }
