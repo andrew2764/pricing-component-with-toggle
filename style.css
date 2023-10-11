@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  border: none;
   box-sizing: border-box;
   font-weight: 700;
   font-family: "Montserrat";
@@ -13,9 +14,33 @@ body {
   background-color: #f7f7fe;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1.125em 0;
+  border-radius: 8px;
+  margin-top: 2.5em;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  cursor: pointer;
+}
+
 h1 {
   font-size: 72px;
   color: #4a4d60;
+  margin: 0.25em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+h1 span {
+  font-size: 40px;
 }
 
 h2 {
@@ -28,11 +53,32 @@ h2 {
   opacity: 0.5;
 }
 
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(212, 210, 244, 0.5);
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 2em 2em;
+  max-width: 330px;
+}
+
 .card__title {
   font-size: 18px;
   color: #6e728e;
 }
 
-.card__description {
+.card__details p {
   color: #6e728e;
+  padding: 1.125em 0;
+  border-bottom: solid 1px color-mix(in srgb, #979797 25%, white);
+}
+
+.card__details p:first-child {
+  border-top: solid 1px color-mix(in srgb, #979797 25%, white);
+}
+
+button.primary {
+  background: linear-gradient(#a2a7f0, #696edd);
+  color: white;
 }
