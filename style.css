@@ -23,7 +23,11 @@ main {
 .bg-top {
   position: absolute;
   z-index: -1;
-  transform: translateX(30px) translateY(-25px);
+  top: -50px;
+  right: -150px;
+}
+.bg-bottom {
+  display: none;
 }
 
 button {
@@ -175,4 +179,31 @@ button.accent:hover {
   border: solid 1px white;
   margin-top: calc(2.5em - 1px);
   margin-bottom: calc(0.5em - 1px);
+}
+
+@media (min-width: 1000px) {
+  .bg-bottom {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card.accent {
+    padding: 3.5em 2.25em;
+    max-width: 350px;
+  }
 }
