@@ -3,4 +3,23 @@
   margin: 0;
   outline: none;
   box-sizing: border-box;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.card__title {
+  font-size: 18px;
 }
