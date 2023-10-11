@@ -10,16 +10,29 @@
 
 body {
   text-align: center;
+  background-color: #f7f7fe;
 }
 
 h1 {
   font-size: 72px;
+  color: #4a4d60;
 }
 
 h2 {
   font-size: 32px;
+  color: #6e728e;
+}
+
+.toggle--container span {
+  color: #6e728e;
+  opacity: 0.5;
 }
 
 .card__title {
   font-size: 18px;
+  color: #6e728e;
+}
+
+.card__description {
+  color: #6e728e;
 }
