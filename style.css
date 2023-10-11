@@ -48,9 +48,53 @@ h2 {
   color: #6e728e;
 }
 
+.toggle--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .toggle--container span {
   color: #6e728e;
   opacity: 0.5;
+}
+
+#price-toggle {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 56px;
+  height: 32px;
+  background: linear-gradient(#a2a7f0, #696edd);
+  border-radius: 50px;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+label:active:after {
+  width: 30px;
+}
+
+input:checked + label:after {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
 }
 
 .card {
