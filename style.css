@@ -105,7 +105,7 @@ label:after {
   width: 24px;
   height: 24px;
   top: 4px;
-  left: 4px;
+  right: 4px;
   border-radius: 30px;
   transition: 0.3s;
 }
@@ -115,8 +115,8 @@ label:active:after {
 }
 
 input:checked + label:after {
-  left: calc(100% - 4px);
-  transform: translateX(-100%);
+  right: calc(100% - 4px);
+  transform: translateX(100%);
 }
 
 .card {
